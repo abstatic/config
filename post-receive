@@ -1,0 +1,4 @@
+#!/bin/sh
+export GIT_WORK_TREE=/home/jharvard/repo/helpingO_workspace/
+git checkout -f
+curl http://localhost:8080/job/helpingO/build?delay=5sec
