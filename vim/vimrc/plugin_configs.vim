@@ -14,7 +14,7 @@ let g:Tex_MultipleCompileFormats = 'dvi,pdf'
 let g:NERDSpaceDelims = 1
 
 " NERD_Tree
-let g:NERDTreeWinPos = 'right'
+let g:NERDTreeWinPos = 'left'
 map <Leader>n :NERDTreeFind<cr>
 
 " Python-mode

@@ -16,9 +16,9 @@ if has("gui_running")
   if has("gui_gtk2")
  "   set guifont=Ubuntu\ 9
   elseif has("gui_win32")
-    set guifont=Ubuntu:h10:cANSI
+    set guifont=Cantarell:h10:cANSI
   else
-    set guifont=Ubuntu:h12
+    set guifont=Cantarell:h12
   endif
 else
 " TERMINAL ===========

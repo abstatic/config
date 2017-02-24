@@ -7,6 +7,8 @@ behave xterm
 filetype plugin indent on
 syntax on
 
+let g:neocomplcache_enable_at_startup = 1
+
 source $HOME/.vim/vimrc/filetypes.vim
 source $HOME/.vim/vimrc/looks.vim
 source $HOME/.vim/vimrc/mappings.vim
