@@ -110,7 +110,7 @@ export PATH=$PATH:/home/abstatic/algs4/bin:/home/ubuntu/Downloads/pycharm-5.0.4/
 ## Configuring aliases for xrandr. Just because.
 alias HDMI='xrandr --output HDMI1 --auto --output eDP1 --off --output DP1 --off'
 alias laptop='xrandr --output eDP1 --auto --output HDMI1 --off --output DP1 --off'
-alias dual='xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1 --output DP1 --off'
+alias dual='xrandr --output eDP1 --auto --output HDMI1 --auto --left-of eDP1 --output DP1 --off'
 alias triple='xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1 --output DP1 --auto --right-of HDMI1'
 
 # alias for changing the volume of LAPTOP
@@ -147,3 +147,6 @@ alias activate_canopy="source '/home/ubuntu/Enthought/Canopy_64bit/User/bin/acti
 
 export NVM_DIR="/home/ubuntu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+alias ec2='ssh -i "/home/ubuntu/Downloads/abhishek-myally.pem" ec2-user@54.186.120.63'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
