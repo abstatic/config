@@ -54,7 +54,8 @@ fi
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
+alias l='ls -CXF'
+alias lx='ls -X --group-directories-first'
 alias gradle='/home/abstatic/TS/gradle-2.1/bin/gradle'
 alias mvn='/home/abstatic/Software/apache-maven-3.3.3/bin/mvn'
 alias lampp='sudo /opt/lampp/lampp'
@@ -66,7 +67,6 @@ alias server='ssh root@128.199.246.15'
 alias staging='ssh root@128.199.117.202'
 # alias for compiling gtk based files
 alias cgtk='gcc `pkg-config --cflags gtk+-3.0 --libs gtk+-3.0`'
-alias gcc='gcc -std=c99 -ggdb3 -o'
 ##alias for docker
 alias docker='sudo docker'
 alias showtree='git log --pretty=oneline --graph --decorate --all'
@@ -78,7 +78,7 @@ alias ...="cd ../.."
 alias tree='tree -C'
 
 #trying to set a path variable
-export PATH=$PATH:/opt/jdk/bin/
+export PATH=$PATH:$HOME/dev/iiith/os/assignment_3/base/pintos/src/utils
 JAVA_HOME='/opt/jdk/'
 black="\[\033[0m\]"
 red="\[\033[0;31m\]"
@@ -110,7 +110,8 @@ export PATH=$PATH:/home/abstatic/algs4/bin:/home/ubuntu/Downloads/pycharm-5.0.4/
 ## Configuring aliases for xrandr. Just because.
 alias HDMI='xrandr --output HDMI1 --auto --output eDP1 --off --output DP1 --off'
 alias laptop='xrandr --output eDP1 --auto --output HDMI1 --off --output DP1 --off'
-alias dual='xrandr --output eDP1 --auto --output HDMI1 --auto --left-of eDP1 --output DP1 --off'
+alias dual='xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1 --output DP1 --off'
+# alias dual='xrandr --output eDP1 --auto --output DP1 --auto --right-of eDP1'
 alias triple='xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1 --output DP1 --auto --right-of HDMI1'
 
 # alias for changing the volume of LAPTOP
@@ -127,11 +128,6 @@ alias log='git log --all --decorate --oneline --graph'
 # alias for copy paste stuff
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
-
-##ruby stuff
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 #gpg magic
 function encrypt() {
@@ -150,3 +146,27 @@ export NVM_DIR="/home/ubuntu/.nvm"
 
 alias ec2='ssh -i "/home/ubuntu/Downloads/abhishek-myally.pem" ec2-user@54.186.120.63'
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias keep='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki
+Icon=chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default
+StartupWMClass=crx_hmjkmjkepdijhoojdojkdfohbdgmmhki'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+## CONTENT FOR IIIT H PROXY
+export http_proxy=http://proxy.iiit.ac.in:8080/
+export https_proxy=$http_proxy
+export ftp_proxy=$http_proxy
+export rsync_proxy=$http_proxy
+export ssh_proxy=$http_proxy
+export no_proxy="localhost, 127.0.0.1, *iiit.ac.in, *iiit.net, 172.16.*.*, 172.17.*.*, 192.168.*.*, 10.*.*.*"
+
+## alias for iiit homework directory
+alias iiit="cd /home/ubuntu/dev/iiith/"
+alias clr="echo '\033c'"
+alias c++="cd /home/ubuntu/dev/coding/c++/"
+alias c="cd /home/ubuntu/dev/coding/c/"
+
+export EDITOR=vim
+export TERMCMD=terminator

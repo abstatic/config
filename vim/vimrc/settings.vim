@@ -8,7 +8,7 @@ set cursorline                        " highlight cursor line
 set encoding=utf-8
 set expandtab
 set foldlevel=20
-set foldmethod=syntax
+set foldmethod=indent
 set formatoptions=1
 set hidden                            " Keep buffers around after closing them
 set history=50
@@ -53,3 +53,8 @@ set wrapmargin=2
 
 " setup a paste mode toggle using F2
 set pastetoggle=<F2>
+
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+

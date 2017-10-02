@@ -5,7 +5,7 @@ if has("gui_running")
   "colors sienna
   "colors zenburn
   "colors lucius
-  colors jellybeans
+  " colors jellybeans
   set lines=70
   set columns=130
   " Remove scrollbars, toolbars, etc.
@@ -14,16 +14,16 @@ if has("gui_running")
   set guioptions-=T
 
   if has("gui_gtk2")
- "   set guifont=Ubuntu\ 9
+    " set guifont=Cantarell:h10:cANSI
   elseif has("gui_win32")
-    set guifont=Cantarell:h10:cANSI
+    " set guifont=Cantarell:h10:cANSI
   else
-    set guifont=Cantarell:h12
+    " set guifont=Cantarell:h12
   endif
 else
 " TERMINAL ===========
   " for default color scheme
-  set background=dark
+  set background=light
 
   if $SSH_CONNECTION == ""  " Local terminal
     set t_Co=256
@@ -38,7 +38,7 @@ else
 
   "colors zenburn
   "colors lucius
-  colors jellybeans
+  colors solarized
 endif
 
 if exists('+colorcolumn')
